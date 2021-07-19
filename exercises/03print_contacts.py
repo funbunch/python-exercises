@@ -20,3 +20,10 @@ contacts = {
   'Lenny': '444-444-4444',
   'Daniel': '777-777-7777'
 }
+
+def print_contacts(contacts):
+  for contact_name in contacts:
+    print('{} has a phone number of {}'.format(contact_name, contacts[contact_name]))
+
+    # print(f'{contact_name} has a phone number of {contacts[contact_name]}'})
+    print_contacts(contacts)
